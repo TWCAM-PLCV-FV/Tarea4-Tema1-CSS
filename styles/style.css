@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(#445566, #667788); 
+}
+
+header{
+    width: 580px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    color: #F9B84A;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 0px 5px black, 0px 3px #777;
+    padding: 10px 10px 15px 10px;
+    background: rgba(150,150,150, 0.8);
+    border-radius: 20px 10px 20px 10px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,1); 
+}
+
+footer{
+    margin: 40px;
+    text-align: center;
+    clear: both;
+    color: #444;
+    border-top: 1px solid #F2F2F2;
+    padding: 5px; 
+}
+
+.pie{
+    padding: 10px;
+    background: #333;
+    margin-top: 10px; 
+}
+
+ul.tabla_precios{
+    width: 600px;
+    color: #fff;
+    font-size: 12px;
+    font-family: arial, verdana;
+    line-height: 150%;
+    text-align: center;
+    margin: 40px auto 0px auto;
+}
+
+.tabla_precios>li{
+    background: linear-gradient(#666, #333);
+    width: 33.33%;
+    float: left;
+    list-style-type: none;
+    transition: all 0.2s; 
+}
+
+h3{
+    text-transform: uppercase;
+    padding: 15px 0px;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.cuerpo_precio{
+    width: 125px;
+    height: 125px;
+    margin: 0px auto 15px auto;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: table; 
+}
+
+.precio{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.precio_cantidad{
+    display: block; 
+}
+
+.precio_tiempo{
+    font-size: 11px;
+    font-weight: normal; 
+}
+
+.caracteristicas li{
+    list-style-type: none;
+    padding: 5px 0px; 
+}
+
+.boton_action{
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    background: #000;
+    padding: 4px 20px;
+    border-radius: 15px;
+    background: linear-gradient(#666, #333); 
+}
+
+strong{
+    color: #44AA44;
+    text-transform: uppercase; 
+}
+
+.active strong{
+    color: #444444;
+    text-transform: uppercase; 
+}
+
+.tabla_precios>li.active{
+    background: linear-gradient(#F9B84A, #DB7224);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tabla_precios li.active .pie .boton_action{
+    background: linear-gradient(#F9B84A, #DB7224); 
+}
+
+.clr{
+    clear: both;
+}

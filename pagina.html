@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PLCV - Guía HTML5 y CSS3</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css"> 
+</head>
+
+<body>
+    <header>
+        La mejor oferta
+    </header>
+        
+    <section class="contenido">
+            <ul id="over" class="tabla_precios">
+                <li id="section1" onmouseenter="functOver(id)" onmouseleave="functOverOut(id)">
+                    <h3>Inicial </h3>
+                    <div class="cuerpo_precio">
+                    <div class="precio">
+                    <span class="precio_cantidad">GRATIS</span>
+                    <span class="precio_tiempo"></span>
+                    </div>
+                    </div>
+                    <div class="caracteristicas">
+                    <ul>
+                    <li>Una única cuenta</li>
+                    <li>Hasta 100 ficheros</li>
+                    <li>Compartir con 5 usuarios</li>
+                    <li><strong>5 GB</strong> de almacenamiento</li>
+                    <li>Conexión con redes sociales</li>
+                    <li>Sin soporte</li>
+                    </ul>
+                    </div>
+                    <div class="pie">
+                    <a href="#" class="boton_action">Contratar</a>
+                    </div>
+                </li>
+
+                <li id="section2" onmouseenter="functOver(id)" onmouseleave="functOverOut(id)">
+                    <h3>Básico </h3>
+                    <div class="cuerpo_precio">
+                    <div class="precio">
+                    <span class="precio_cantidad">30$</span>
+                    <span class="precio_tiempo">Mensual</span>
+                    </div>
+                    </div>
+                    <div class="caracteristicas">
+                    <ul>
+                    <li>10 cuentas</li>
+                    <li>Ficheros <strong>ILIMITADOS</strong></li>
+                    <li>Compartir con 50 usuarios</li>
+                    <li><strong>25 GB</strong> de almacenamiento</li>
+                    <li>Conexión con redes sociales</li>
+                    <li>Soporte <strong>BÁSICO</strong></li>
+                    </ul>
+                    </div>
+                    <div class="pie">
+                    <a href="#" class="boton_action">Contratar</a>
+                    </div>
+                </li>
+
+                <li id="section3" onmouseenter="functOver(id)" onmouseleave="functOverOut(id)">
+                    <h3>Premium </h3>
+                    <div class="cuerpo_precio">
+                    <div class="precio">
+                    <span class="precio_cantidad">70$</span>
+                    <span class="precio_tiempo">MENSUAL</span>
+                    </div>
+                    </div>
+                    <div class="caracteristicas">
+                    <ul>
+                    <li>Cuentas <strong>ILIMITADAS</strong></li>
+                    <li>Ficheros <strong>ILIMITADOS</strong></li>
+                    <li>Compartir con 200 usuarios</li>
+                    <li><strong>SIN LIMITE</strong> de almacenamiento</li>
+                    <li>Conexión con redes sociales</li>
+                    <li>Soporte <strong>PREMIUM</strong></li>
+                    </ul>
+                    </div>
+                    <div class="pie">
+                    <a href="#" class="boton_action">Contratar</a>
+                    </div>
+                </li>
+            </ul>
+    </section>
+
+    <div class="clr"></div>
+    
+    <footer>
+        © 2022 - PLCV
+    </footer>
+
+    <script>
+        function functOver(value){
+            console.log(value)
+            const element = document.getElementById(value);
+            element.className="active";
+        }
+    
+        function functOverOut(value){
+            const element = document.getElementById(value);
+            element.className="noActive";
+        }
+    
+     </script>
+
+ </body>
+
+ 
+</html> 
